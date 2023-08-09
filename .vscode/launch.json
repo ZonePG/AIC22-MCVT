@@ -117,6 +117,26 @@
             ],
         },
         {
+            "name": "Python: detect2img c046",
+            "type": "python",
+            "request": "launch",
+            "program": "detect2img.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector/yolov5_2022",
+            "args": [
+                "--name=c046",
+                "--weights=./weights/yolov5x6.pt",
+                "--conf-thres=0.1",
+                "--agnostic",
+                "--save-txt",
+                "--save-conf",
+                "--img-size=1280",
+                "--classes", "2", "5", "7",
+                "--cfg_file=aic_all.yml",
+            ],
+        },
+        {
             "name": "Python: extract_image_feat.py aic_reid1.yml",
             "type": "python",
             "request": "launch",
@@ -126,6 +146,42 @@
             "cwd": "${workspaceFolder}/reid",
             "args": [
                 "aic_reid1.yml"
+            ],
+        },
+        {
+            "name": "Python: extract_image_feat.py aic_reid2.yml",
+            "type": "python",
+            "request": "launch",
+            "program": "extract_image_feat.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/reid",
+            "args": [
+                "aic_reid2.yml"
+            ],
+        },
+        {
+            "name": "Python: extract_image_feat.py aic_reid3.yml",
+            "type": "python",
+            "request": "launch",
+            "program": "extract_image_feat.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/reid",
+            "args": [
+                "aic_reid3.yml"
+            ],
+        },
+        {
+            "name": "Python: merge_reid_feat.py aic_all.yml",
+            "type": "python",
+            "request": "launch",
+            "program": "merge_reid_feat.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/reid",
+            "args": [
+                "aic_all.yml"
             ],
         },
     ]
