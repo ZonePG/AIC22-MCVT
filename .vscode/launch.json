@@ -1,0 +1,135 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: gen_image_aic",
+            "type": "python",
+            "request": "launch",
+            "program": "gen_images_aic.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector",
+            "args": [
+                "aic_all.yml"
+            ]
+        },
+        {
+            "name": "Python: detect2img c041",
+            "type": "python",
+            "request": "launch",
+            "program": "detect2img.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector/yolov5_2022",
+            "args": [
+                "--name=c041",
+                "--weights=./weights/yolov5x6.pt",
+                "--conf-thres=0.1",
+                "--agnostic",
+                "--save-txt",
+                "--save-conf",
+                "--img-size=1280",
+                "--classes", "2", "5", "7",
+                "--cfg_file=aic_all.yml",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            }
+        },
+        {
+            "name": "Python: detect2img c042",
+            "type": "python",
+            "request": "launch",
+            "program": "detect2img.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector/yolov5_2022",
+            "args": [
+                "--name=c042",
+                "--weights=./weights/yolov5x6.pt",
+                "--conf-thres=0.1",
+                "--agnostic",
+                "--save-txt",
+                "--save-conf",
+                "--img-size=1280",
+                "--classes", "2", "5", "7",
+                "--cfg_file=aic_all.yml",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "2"
+            }
+        },
+        {
+            "name": "Python: detect2img c043",
+            "type": "python",
+            "request": "launch",
+            "program": "detect2img.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector/yolov5_2022",
+            "args": [
+                "--name=c043",
+                "--weights=./weights/yolov5x6.pt",
+                "--conf-thres=0.1",
+                "--agnostic",
+                "--save-txt",
+                "--save-conf",
+                "--img-size=1280",
+                "--classes", "2", "5", "7",
+                "--cfg_file=aic_all.yml",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            }
+        },
+        {
+            "name": "Python: detect2img c044",
+            "type": "python",
+            "request": "launch",
+            "program": "detect2img.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector/yolov5_2022",
+            "args": [
+                "--name=c044",
+                "--weights=./weights/yolov5x6.pt",
+                "--conf-thres=0.1",
+                "--agnostic",
+                "--save-txt",
+                "--save-conf",
+                "--img-size=1280",
+                "--classes", "2", "5", "7",
+                "--cfg_file=aic_all.yml",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            }
+        },
+        {
+            "name": "Python: detect2img c045",
+            "type": "python",
+            "request": "launch",
+            "program": "detect2img.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/detector/yolov5_2022",
+            "args": [
+                "--name=c045",
+                "--weights=./weights/yolov5x6.pt",
+                "--conf-thres=0.1",
+                "--agnostic",
+                "--save-txt",
+                "--save-conf",
+                "--img-size=1280",
+                "--classes", "2", "5", "7",
+                "--cfg_file=aic_all.yml",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            }
+        }
+    ]
+}
