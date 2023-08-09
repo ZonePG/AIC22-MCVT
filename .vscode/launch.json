@@ -35,9 +35,6 @@
                 "--classes", "2", "5", "7",
                 "--cfg_file=aic_all.yml",
             ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "1"
-            }
         },
         {
             "name": "Python: detect2img c042",
@@ -58,9 +55,6 @@
                 "--classes", "2", "5", "7",
                 "--cfg_file=aic_all.yml",
             ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "2"
-            }
         },
         {
             "name": "Python: detect2img c043",
@@ -81,9 +75,6 @@
                 "--classes", "2", "5", "7",
                 "--cfg_file=aic_all.yml",
             ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "1"
-            }
         },
         {
             "name": "Python: detect2img c044",
@@ -104,9 +95,6 @@
                 "--classes", "2", "5", "7",
                 "--cfg_file=aic_all.yml",
             ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "1"
-            }
         },
         {
             "name": "Python: detect2img c045",
@@ -127,9 +115,18 @@
                 "--classes", "2", "5", "7",
                 "--cfg_file=aic_all.yml",
             ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "1"
-            }
-        }
+        },
+        {
+            "name": "Python: extract_image_feat.py aic_reid1.yml",
+            "type": "python",
+            "request": "launch",
+            "program": "extract_image_feat.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/reid",
+            "args": [
+                "aic_reid1.yml"
+            ],
+        },
     ]
 }

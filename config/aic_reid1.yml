@@ -1,5 +1,4 @@
 DET_SOURCE_DIR: '/home/zonepg/code/AIC22-MCVT/datasets/algorithm_results/detection/images/test/S06/'
-# REID_MODEL: 'reid_model/resnet101_ibn_a_2.pth'
 REID_MODEL: 'reid_model/resnet101_ibn_a_2.pth'
 REID_BACKBONE: 'resnet101_ibn_a'
 DET_IMG_DIR: '/home/zonepg/code/AIC22-MCVT/datasets/algorithm_results/detect_merge/'
