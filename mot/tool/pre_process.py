@@ -3,6 +3,7 @@ import pickle
 import json
 import os
 from utils import set_dir
+from tqdm import tqdm
 
 src_path = "../../datasets/algorithm_results/detect_merge/"
 
@@ -31,6 +32,7 @@ class NumpyEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 
 for cam_name in cam_names:
+    print("process cam_name:", cam_name)
     cache_file = os.path.join(src_path,cam_name)
     set_dir(os.path.join(cache_file,"feature"))
     set_dir(os.path.join(cache_file,"detect_result"))
@@ -43,7 +45,7 @@ for cam_name in cam_names:
         data = pickle.load(fid)
         frame_data = {}
         last_image_name = ""
-        for index,key in enumerate(data):
+        for index,key in enumerate(tqdm(data)):
             image_name = key.split("_")[0]
             if index == 0:
                 frame_data[key] = data[key]
