@@ -113,6 +113,8 @@ def detect(save_img=False):
             p = Path(p)  # to Path
             save_path = str(save_dir / 'dets_debug' / p.name)  # img.jpg
             txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
+            if os.path.exists(txt_path+'.txt'):
+                os.remove(txt_path+'.txt')
             det_path = str(save_dir / 'dets' /p.stem)
             if not os.path.isdir(str(save_dir / 'dets')):
                 os.makedirs(str(save_dir / 'dets'))
