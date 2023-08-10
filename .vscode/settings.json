@@ -1,0 +1,10 @@
+{
+    "clangd.arguments": [
+        "--clang-tidy", // 启用 Clang-Tidy 以提供「静态检查」，下面设置 clang tidy 规则
+        "--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
+        "--compile-commands-dir=${workspaceFolder}/mot/build", // 编译数据库(例如 compile_commands.json 文件)的目录位置
+        "--completion-parse=auto", // 当 clangd 准备就绪时，用它来分析建议
+        "--completion-style=detailed", // 建议风格：打包(重载函数只会给出一个建议);还可以设置为 detailed
+        "--function-arg-placeholders=0", // 补全函数时，将会给参数提供占位符，键入后按 Tab 可以切换到下一占位符，乃至函数末
+    ],
+}

@@ -193,5 +193,12 @@
             "justMyCode": true,
             "cwd": "${workspaceFolder}/mot/tool",
         },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "city_tracker",
+            "program": "mot/build/city_tracker",
+            "cwd": "${workspaceFolder}/mot/build",
+        },
     ]
 }
